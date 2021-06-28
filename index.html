@@ -1,0 +1,100 @@
+{% extends 'core/base.html' %}
+{% block title %}PRO-JET{% endblock %}
+{% block content %}
+    {% load static %}
+ <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('{% static 'img/slide/LOGO2.png' %}');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Bienvenido a PRO-JET <span></span></h2>
+                <p class="animate__animated animate__fadeInUp">PRO-JET  te permite gestionar cualquier tipo de proyecto. sin el uso de documentacion fisica  todo  mediante una platafroma web.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div <img src="LOGO2.png" >
+            <div class="carousel-container">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+<section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contactanos</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Direccion</h3>
+              <p><a href="https://goo.gl/maps/CCuiRuYJdpbqNwpz7">Guayaquil, [Centro de Emprendimiento e Innovación Guayaquil Emprende, con cita previa]</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Escribenos</h3>
+              <p>info@corpciti.ec</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box ">
+              <i class="bx bx-phone-call"></i>
+              <h3>Contacto</h3>
+              <p>+593 969156934<br></p>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">tu mensaje esta siendo enviado. gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">enviar mensaje</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+{% endblock %}
+
